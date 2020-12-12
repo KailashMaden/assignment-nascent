@@ -1,0 +1,119 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow: auto;
+  padding: 0 40px;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.card {
+  background-color: #fff;
+  color: #333;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  margin: 10px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  justify-content: center;
+  height: 100%;
+}
+
+.grid-2 {
+  grid-template-columns: 25% 25%;
+  grid-gap: 5rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* Margin */
+
+.my-1 {
+  margin: 1rem 0;
+}
+
+.my-4 {
+  margin: 3rem 0;
+}
+
+.mx-1 {
+  margin: 0 1rem;
+}
+
+.pt-5 {
+  padding-top: 100px;
+}
+
+.mxx-5 {
+  margin: 0 50px;
+}
+
+/* button */
+.btn {
+  font-size: 15px;
+  padding: 8px 20px;
+  border-radius: 5px;
+  color: white;
+  border-style: none;
+}
+
+.btn-hero {
+  padding: 15px 20px;
+}
+
+.btn-premium {
+  padding: 8px 90px;
+  border-radius: 20px;
+}
+
+/* Background-color */
+.btn-light {
+  background-color: var(--light-primary);
+}
+
+.btn-premium {
+  background-color: var(--premium-color);
+}
+
+.btn-secondary {
+  background-color: var(--secondary-color);
+}
+
+.btn-hero {
+  background-color: var(--hero-color);
+}
+
+/* color */
+.light-primary {
+  color: var(--light-primary);
+}
+
+.premium-color {
+  color: var(--premium-color);
+}
+
+/* table */
+table tr > td {
+  padding: 0 10px;
+}
+
+/* icon */
+.fa-check {
+  color: #449310;
+}
+
+.fa-times {
+  color: #ff4040;
+}
