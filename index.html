@@ -9,23 +9,28 @@
     <link rel="stylesheet" href="css/utilities.css" />
   </head>
   <body>
-    <!-- Navbar -->
+
+    <!------------------------------- Navbar ----------------------->
+
     <div class="navbar">
       <div class="container flex">
         <h1 class="logo mxx-5">NASCENT</h1>
+        <div class="openMenu"><i class="fa fa-bars"></i></div>
         <nav>
-          <ul>
-            <li><a href="index.html">HOME</a></li>
-            <li><a href="legal.html">LEGAL</a></li>
-            <li><a href="about.html">ABOUT US</a></li>
-            <li><a href="contact.html">CONTACT US</a></li>
-            <li><a href="login.html"><button class="btn btn-secondary">LOG IN</button></a></li>
+          <ul class="mainMenu">
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">LEGAL</a></li>
+            <li><a href="#">ABOUT US</a></li>
+            <li><a href="#">CONTACT US</a></li>
+            <li><a href="#"><button class="btn btn-secondary">LOG IN</button></a></li>
+            <div class="closeMenu"><i class="fa fa-times"></i></div>
           </ul>
         </nav>
       </div>
     </div>
 
-    <!-- Showcase -->
+    <!----------------------------- Showcase ------------------------>
+
     <section class="showcase">
       <div class="container grid">
         <div class="showcase-text">
@@ -33,7 +38,7 @@
           <h1>WITH NASCENT</h1>
           <p>Experience Best Project Management Tools
          </br> ever in cheaper price.</p>
-          <a href="starter.html"><button class="btn btn-hero">Get Started</button></a>
+          <a href="#"><button class="btn btn-hero">Get Started</button></a>
         </div>
 
         <div class="showcase-form card">
@@ -61,8 +66,8 @@
             <div class="form-control">
               <ul>
                 <li><span>Service Type</span></li>
-                <li><input type="radio">Standard</li>
-                <li><input type="radio">Premium</li>
+                <li><input type="radio" checked="checked" name="radio">Standard</li>
+                <li><input type="radio" name="radio">Premium</li>
               </ul>
             </div>
             <input type="submit" value="Register" class="btn btn-premium">
@@ -72,7 +77,8 @@
     <svg viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,96L60,122.7C120,149,240,203,360,240C480,277,600,299,720,304C840,309,960,299,1080,256C1200,213,1320,139,1380,101.3L1440,64L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
     </section>
 
-    <!-- Stats -->
+    <!---------------------------- Stats ------------------------------>
+
     <section class="stats mxx-5">
       <div class="container">
         <h3 class="stats-heading text-center my-1">
@@ -100,12 +106,7 @@
                   <td>Standard Service 4</td>
                 </tr>
             </table>
-            <!-- <ul class="pt-5">
-              <li><i class="fas fa-check fa-2x"></i>Good for small business</li>
-              <li><i class="fas fa-check fa-2x"></i>Standard Service 2</li>
-              <li><i class="fas fa-check fa-2x"></i>Standard Service 3</li>
-              <li>Standard Service 4</li>
-            </ul> -->
+      
             <h1 class='light-primary my-1'>BUY NOW</h1>
           </div>
           
@@ -137,7 +138,8 @@
     </section>
     <hr class="mxx-5" />
 
-    <!-- Footer -->
+    <!----------------------------- Footer ---------------------------->
+    
     <section class="footer mxx-5">
       <div class="grid">
         <h2>Nascent</h2>
@@ -145,11 +147,11 @@
         <div class="footer-links">
           <div class="social">
             <a href="#"><i><img src="icons/facebook.svg" alt="facebook"></i></a>
-            <a href="#"><i><img src="icons/linkedin.svg" alt="facebook"></i></a>
-            <a href="#"><i><img src="icons/youtube.svg" alt="facebook"></i></a>
-            <a href="#"><i><img src="icons/twitter.svg" alt="facebook"></i></a>
+            <a href="#"><i><img src="icons/linkedin.svg" alt="linkedin"></i></a>
+            <a href="#"><i><img src="icons/youtube.svg" alt="youtube"></i></a>
+            <a href="#"><i><img src="icons/twitter.svg" alt="twitter"></i></a>
           </div>
-          <div>
+          <div class="other-links">
             <a href="#">Terms of Service |</a>
             <a href="#">Privacy |</a>
             <a href="#">Legal</a>
@@ -160,6 +162,6 @@
       <h4 class="text-center mt-5">2020 Nascent Inc, All rights reserved</h2>
     </section>
 
-
+    <script src="js/app.js"></script>
   </body>
 </html>

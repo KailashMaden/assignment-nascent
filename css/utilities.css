@@ -38,7 +38,7 @@
   text-align: center;
 }
 
-/* Margin */
+/*------------------------------------ Margin */
 
 .my-1 {
   margin: 1rem 0;
@@ -64,13 +64,14 @@
   margin: 50px 0 10px 0;
 }
 
-/* button */
+/*------------------------------------ button */
 .btn {
   font-size: 15px;
   padding: 8px 20px;
   border-radius: 5px;
   color: white;
   border-style: none;
+  cursor: pointer !important;
 }
 
 .btn-hero {
@@ -82,7 +83,7 @@
   border-radius: 20px;
 }
 
-/* Background-color */
+/*--------------------------------- Background-color */
 .btn-light {
   background-color: var(--light-primary);
 }
@@ -99,7 +100,7 @@
   background-color: var(--hero-color);
 }
 
-/* color */
+/*--------------------------------- color */
 .light-primary {
   color: var(--light-primary);
 }
@@ -108,12 +109,15 @@
   color: var(--premium-color);
 }
 
-/* table */
+/*-------------------------------- table */
 table tr > td {
   padding: 0 10px;
 }
+table tr:nth-child(odd) {
+  background-color: var(--tablerow-color);
+}
 
-/* icon */
+/*--------------------------------- icon */
 .fa-check {
   color: #449310;
 }
@@ -121,3 +125,5 @@ table tr > td {
 .fa-times {
   color: #ff4040;
 }
+
+/*--------------------------------- End of Utilities CSS */

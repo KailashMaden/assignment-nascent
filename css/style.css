@@ -6,8 +6,11 @@
   --light-primary: #489bff;
   --hero-color: #243d8e;
   --premium-color: #073a93;
+  --tablerow-color: #f1f1f1;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 * {
   box-sizing: border-box;
   padding: 0;
@@ -49,11 +52,33 @@ span {
   color: white;
 }
 
-/* Navbar */
+/*--------------------------------- Navbar -----------------------*/
 .navbar {
   background-color: var(--primary-color);
   color: #fff;
   height: 70px;
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.mainMenu li a:hover,
+button:hover {
+  color: var(--premium-color);
+}
+
+nav .mainMenu .closeMenu {
+  font-size: 2rem;
+  display: none;
+  cursor: pointer;
+}
+
+.container .openMenu {
+  font-size: 2rem;
+  display: none;
+  cursor: pointer;
 }
 
 .navbar ul {
@@ -70,7 +95,7 @@ span {
   justify-content: space-between;
 }
 
-/* Showcase */
+/*-------------------------------- Showcase ----------------------- */
 .showcase {
   height: 500px;
   background-color: var(--primary-color);
@@ -99,6 +124,7 @@ span {
 .showcase .special {
   padding-left: 10px;
   font-size: 15px;
+  cursor: pointer;
 }
 
 .showcase-form {
@@ -121,6 +147,7 @@ span {
 .showcase-form input[type='password'],
 .showcase-form input[type='number'] {
   border: 0;
+  outline: 0;
   border-bottom: 1px solid #b4becb;
   width: 100%;
   padding: 3px;
@@ -142,7 +169,7 @@ svg {
   outline: 1px;
 }
 
-/* Stats */
+/*---------------------------------- Stats ------------------------ */
 .stats {
   padding-top: 150px;
   background-color: #f1f1f1;
@@ -174,7 +201,7 @@ svg {
   margin-right: 20px;
 }
 
-/* Footer */
+/*----------------------------- Footer-------------------------- */
 .footer {
   padding: 40px 0 0 0;
   background-color: #f1f1f1;
@@ -190,6 +217,104 @@ svg {
   font-weight: bold;
 }
 
-.footer-links .social>a{
+.footer-links .social > a {
   margin: 0 10px;
 }
+
+/* ----------------------Tablets and under ---------------------- */
+@media (max-width: 768px) {
+  nav .mainMenu {
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 202;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: var(--primary-color);
+    transition: top 1s ease;
+    display: none;
+  }
+  nav .mainMenu li {
+    padding: 20px;
+    font-size: 2rem;
+  }
+  nav .mainMenu .closeMenu {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 60px;
+  }
+  .container .openMenu {
+    display: block;
+  }
+  .mainMenu li a:hover {
+    color: var(--premium-color);
+  }
+  .grid,
+  .showcase .grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    margin: 0;
+  }
+  .showcase form {
+    max-width: 350px;
+    padding: 0 20px;
+  }
+}
+
+/*----------------------------- Mobile --------------------------*/
+@media (max-width: 500px) {
+  .navbar {
+    padding: 0;
+    text-align: left;
+  }
+  .navbar .flex h1 {
+    text-align: start;
+  }
+  .showcase-text h1,
+  div {
+    text-align: center;
+  }
+  .showcase-text a button {
+    font-size: 20px;
+    padding: 15px 90px;
+  }
+  .stats .container {
+    padding-top: 300px;
+    padding-bottom: 100px;
+  }
+  .stats .container .grid {
+    grid-template-columns: 60% 60%;
+    margin: 0 5px;
+    grid-gap: 20px;
+  }
+
+  .card-stats h3 {
+    font-size: 1rem;
+    text-align: left;
+  }
+  .card-stats table tr > td {
+    font-size: 0.5rem;
+  }
+
+  .card-stats .btn {
+    padding: 15px 5px;
+    border-radius: 0 20px 0;
+  }
+  .card-stats h1 {
+    font-size: 0.8rem;
+    font-weight: bolder;
+  }
+  .footer-links .social img {
+    width: 20%;
+    height: 10%;
+  }
+  .footer-links .other-links {
+    font-size: 0.5rem;
+  }
+}
+
+/*------------------------- End of styles CSS ---------------------*/
