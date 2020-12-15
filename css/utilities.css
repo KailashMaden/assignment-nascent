@@ -71,7 +71,7 @@
   border-radius: 5px;
   color: white;
   border-style: none;
-  cursor: pointer !important;
+  cursor: pointer;
 }
 
 .btn-hero {

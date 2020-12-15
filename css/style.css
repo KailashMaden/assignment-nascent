@@ -23,6 +23,17 @@ body {
   line-height: 1.6;
 }
 
+/* Hides scrollbar in Chrome */
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hides scrollbar in Firefox and IE */
+body {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
 ul {
   list-style-type: none;
 }
