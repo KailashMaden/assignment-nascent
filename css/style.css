@@ -110,7 +110,7 @@ nav .mainMenu .closeMenu {
 .showcase {
   position: relative;
   width: 100%;
-  height: 50vh;
+  height: 60vh;
   justify-content: center;
   align-items: center;
 }
@@ -128,7 +128,7 @@ nav .mainMenu .closeMenu {
   width: 100%;
   height: 100%;
   background: var(--primary-color);
-  border-radius: 0 0 50% 50%/0 0 60% 40%;
+  border-radius: 0 0 50% 50%/0 0 95% 60%;
 }
 
 .showcase h1 {
@@ -194,7 +194,7 @@ nav .mainMenu .closeMenu {
 
 /*---------------------------------- Stats ------------------------ */
 .stats {
-  padding-top: 250px;
+  padding-top: 200px;
   background-color: #f1f1f1;
 }
 
@@ -285,6 +285,10 @@ nav .mainMenu .closeMenu {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
   }
+
+  .showcase:before {
+    border-radius: 0 0 20% 20%;
+  }
   .showcase-text {
     padding: 5px 0;
   }
@@ -316,6 +320,7 @@ nav .mainMenu .closeMenu {
     padding: 15px 90px;
   }
   .stats .container {
+    padding-top: 10px;
     padding-bottom: 100px;
   }
   .stats .container .grid {
