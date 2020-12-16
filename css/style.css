@@ -108,14 +108,32 @@ nav .mainMenu .closeMenu {
 
 /*-------------------------------- Showcase ----------------------- */
 .showcase {
-  height: 500px;
-  background-color: var(--primary-color);
-  color: #fff;
   position: relative;
+  width: 100%;
+  height: 50vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.showcase .background-case {
+  background-color: var(--tablerow-color);
+  margin: 0 49px;
+}
+
+.showcase:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--primary-color);
+  border-radius: 0 0 50% 50%/0 0 60% 40%;
 }
 
 .showcase h1 {
   font-size: 40px;
+  text-transform: uppercase;
 }
 
 .showcase p {
@@ -130,6 +148,8 @@ nav .mainMenu .closeMenu {
 
 .showcase-text {
   padding-top: 50px;
+  position: relative;
+  color: white;
 }
 
 .showcase .special {
@@ -170,19 +190,11 @@ nav .mainMenu .closeMenu {
   justify-content: space-between;
   margin: 10px 0 15px 0;
 }
-svg {
-  position: absolute;
-  top: 10;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  margin: auto;
-  outline: 1px;
-}
+
 
 /*---------------------------------- Stats ------------------------ */
 .stats {
-  padding-top: 150px;
+  padding-top: 250px;
   background-color: #f1f1f1;
 }
 
@@ -264,15 +276,25 @@ svg {
   .mainMenu li a:hover {
     color: var(--premium-color);
   }
+
+  .showcase {
+    height: 80vh;
+  } 
   .grid,
   .showcase .grid {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
-    margin: 0;
   }
-  .showcase form {
-    max-width: 350px;
-    padding: 0 20px;
+  .showcase-text {
+    padding: 5px 0;
+  }
+  .showcase-text h1 {
+    font-size: 2rem;
+    text-transform: capitalize;
+  }
+  .showcase-form {
+    width: 300px;
+    top: 0;
   }
 }
 
@@ -280,11 +302,11 @@ svg {
 @media (max-width: 500px) {
   .navbar {
     padding: 0;
-    text-align: left;
   }
-  .navbar .flex h1 {
-    text-align: start;
+  .navbar .logo {
+    margin: 0 30px;
   }
+  
   .showcase-text h1,
   div {
     text-align: center;
@@ -294,13 +316,12 @@ svg {
     padding: 15px 90px;
   }
   .stats .container {
-    padding-top: 300px;
     padding-bottom: 100px;
   }
   .stats .container .grid {
     grid-template-columns: 60% 60%;
     margin: 0 5px;
-    grid-gap: 20px;
+    grid-gap: 10px;
   }
 
   .card-stats h3 {
